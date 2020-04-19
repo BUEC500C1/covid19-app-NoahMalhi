@@ -12,3 +12,4 @@ In the project direcotry ran the following to begin the development server.
 expo start
 
 Following is a screenshot of the helloworld app running on an android.
+<img src="hellodemo.jpg" width="55%" /> <br>
