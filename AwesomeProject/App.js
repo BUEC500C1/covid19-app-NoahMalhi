@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
 }); 
 
-
+// gets data from covid 19 api in json format
 get_data = (country) => {
     country = country.replace(" ", "-")
     console.log("hi")
@@ -45,6 +45,9 @@ export default class App extends React.Component {
   onRegionChange(region) {
     this.setState({ region });
   }
+
+  //need to use constructor or else states will be undefined in funtion calls
+  //state holds values from default to different country searches
   constructor(props) {
     super(props);
       this.state = {
@@ -62,7 +65,7 @@ export default class App extends React.Component {
       this.on_enter = this.on_enter.bind(this);
  };
   
- 
+ //on enter will search the country and obtain data
   on_enter() {
    
     get_data(this.state.country)
@@ -104,7 +107,7 @@ export default class App extends React.Component {
   };
 
 
-
+//renders the user inteface / map and search bar
   render() {
 
     const { search } = this.state;
