@@ -28,3 +28,13 @@ The code is in the Awesomeproject directory in the App.js file.
 
 The following is a screenshot of the app in use on an android.
 <img src="map.jpg" width="55%" /> <br>
+
+### Overlaying covid Data
+
+My covid app takes in a user input via a searchbar. This input is the name of a country. This country input is used with two different apis. The geocoder api is used to get the longitude and latitude to add a marker to the map and relocate the position of the map to that marker. The covid api is used to get country data to find the total deaths, total, recovered, and the total cases of covid within that state. To use the app one just needs to input the country into the searchbar, the press enter. The following is the result of searching various countries:
+
+<img src="qatar.jpg" width="55%" /> </br>
+
+<img src="morocco.jpg" width="55%" /> </br>
+
+All the above is overlayed onto the map done in the previous steps.
